@@ -11,11 +11,14 @@ Crie um array com 5 notas
     Média da turma: 10.0
 */
 
-let notas = [ 1, 1.5, 2, 2.5, 3]
+const notas = [ 1, 2, 3, 4, 5]
 
-let somar = ;
+let soma = 0;
 
-for(resultado = 1; resultado <= notas.lenght; resultado++ ) {
-    somar =+ notas[resultados]
+for(resultado = 1; resultado < notas.length; resultado++ ) {
+    soma = soma + notas[resultado];
 }
 
+let media = soma / notas.length;
+
+console.log("Média da turma: ", media);
