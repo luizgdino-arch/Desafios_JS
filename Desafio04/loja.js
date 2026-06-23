@@ -12,7 +12,16 @@ os produtos que custam mais de R$ 100,00.
 
 Exiba o nome dos produtos encontrados.
 */
-[
-let objetos ("farinha" "ovos" "leite" "manteiga" "azeite")
-objeto farinha("")
-]
+let produtos = [
+    {nome: "Farinha", preço: 130.00},
+    {nome: "Ovos", preço: 120.00},
+    {nome: "Leite", preço: 115.00},
+    {nome: "manteiga", preço: 120.00},
+];
+
+
+for(let i = 0; i < produtos.length; i++) {
+    if(produtos[i].preço > 100){
+        console.log(produtos[i].nome);
+    }
+}
